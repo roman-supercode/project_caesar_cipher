@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt lev3_10: Encoder-Decoder (Caesar cipher)</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- <form action="#"> -->
+    <section>
+        <h1>Caesar Cipher</h1>
+        <div>
+            <input type="radio" id="kodierung" name="cipher" checked>
+            <label for="kodierung">Kodierung</label>
+
+            <input type="radio" id="dekodierung" name="cipher">
+            <label for="dekodierung">Dekodierung</label>
+        </div>
+        <label for="userInput"></label>
+        <input type="text" id="userInput" placeholder="put your message here" required>
+        <label for="shiftKey"></label>
+        <input type="number" id="shiftKey" placeholder="Schlüssel" required>
+
+        <button type="button" onclick="caesarShift()">Encrypt</button>
+
+        <p id="output">🫠</p>
+    </section>
+    <!-- </form> -->
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
